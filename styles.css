@@ -1,0 +1,18 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+
+#section-one {
+    height:100vh;
+}
+
+#section-two {
+    /*display: none; --> descomentar esto para que funcione el js*/
+    height:100vh;
+}
+
+#section-three {
+    /*display: none; --> descomentar esto para que funcione el js*/
+    height:100vh;
+}
