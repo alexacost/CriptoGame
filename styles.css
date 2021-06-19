@@ -8,11 +8,11 @@
 }
 
 #section-two {
-    /*display: none; --> descomentar esto para que funcione el js*/
+    display: none;
     height:100vh;
 }
 
 #section-three {
-    /*display: none; --> descomentar esto para que funcione el js*/
+    display: none;
     height:100vh;
 }
