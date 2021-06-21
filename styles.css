@@ -1,18 +1,120 @@
 *{
     margin: 0px;
     padding:0px;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+
+}
+
+body{
+    background-color: #110C31;
+    background-image: url(img/bg-particle.svg);
 }
 
 #section-one {
     height:100vh;
+    background-color: #110C31;
+    background-image: url(img/bg-particle.svg);
+}
+
+.titulo {
+    font-size: 6em;
+    font-weight: 700;
+}
+
+.btn-play{
+    background-color: #7F00FF;
+    border-color: #7F00FF;
+    box-shadow: 4px 4px 4px rgba(127, 0, 255, 0.5);
+    border-radius: .4em;
+    font-size: 1.7em;
+    font-weight: 600;
+    width: 150px;
+    height: 60px;
+}
+
+.btn-play:hover{
+    background-color: white;
+    color: #7F00FF;
 }
 
 #section-two {
     display: none;
     height:100vh;
+    background-color: #110C31;
+    background-image: url(img/bg-particle.svg);
+}
+
+.text-name{
+    font-size: 4.7em;
+    font-weight: 600;
+}
+
+.btn-go{
+    font-weight: 600;
+    background-color: #7F00FF;
+    border-color: #7F00FF;
+}
+
+.btn-go:hover{
+    background-color: white;
+    color: #7F00FF;
+    
 }
 
 #section-three {
     display: none;
     height:100vh;
+    background-color: #110C31;
+    background-image: url(img/bg-particle.svg);
 }
+
+.btn-section-three{
+    background-color: #7F00FF;
+    border-color: white;
+    border-radius: .4em;
+    font-weight: 600;
+    width: 250px;
+    height: 70px;
+}
+
+.txt-dificultad{
+    font-size: 4.7em;
+    font-weight: 600;
+}
+
+.btn-section-three:hover{
+    background-color: white;
+    border-color: #7F00FF;
+    color: #7F00FF;
+}
+
+#section-four {
+    /*display: none; --> descomentar esto para que funcione el js*/
+    height:100vh;
+    background-color: #110C31;
+    background-image: url(img/bg-particle.svg);
+}
+
+#section-five {
+    /*display: none; --> descomentar esto para que funcione el js*/
+    height:100vh;
+    background-color: #110C31;
+    background-image: url(img/bg-particle.svg);
+}
+
+#section-six {
+    /*display: none; --> descomentar esto para que funcione el js*/
+    height:100vh;
+    background-color: #110C31;
+    background-image: url(img/bg-particle.svg);
+}
+
+.links-footer{
+    color: #00FFFF;
+}
+
+.links-footer:hover{
+    color:#00FFFF;
+}
+
