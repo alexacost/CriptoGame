@@ -1,66 +1,161 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CriptoGame</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="container">
         <div id="section-one" class="row">
 
-            <div class="col-12 d-flex justify-content-center align-items-center">
-                <h1>CritpoGamssssssssssssssssssssssssse</h1>
+            <div class="d-flex justify-content-start align-items-center col-6">
+                <img src="img/bg-inicio.png" alt="Imágen ilustrativa sobre el Bitcoin">
+
             </div>
 
-            <div class="col-12 d-flex justify-content-center align-items-center">
-                <button class="btn btn-primary">Comenzar</button>    
+            <div class="d-flex flex-column justify-content-center align-items-center col-6">
+                <h1 class="titulo">CriptoGame</h1>
+                <button class="btn btn-primary btn-lg mt-5 btn-play">PLAY!</button>
             </div>
 
         </div>
 
-        <div id="section-two" class="row">
+        <div id="section-two" class="row d-flex flex-column justify-content-center">
 
-            <div class="col-12 d-flex justify-content-center align-items-center">
-                <h1>¿Cómo te llamas?</h1>
+            <div class="col-12 d-flex justify-content-center align-items-center p-4">
+                <h1 class="text-name">¿Cómo te llamas?</h1>
             </div>
 
-            <div class="col-12">
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Nombre.." aria-label="Recipient's username" aria-describedby="button-addon2">
-                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Empezar</button>
-                  </div>                  
+            <div class="container col-7">
+                <div class="input-group input-group-lg mb-3 input-name">
+                    <input type="text" class="form-control " placeholder="Ingresá tu nombre.."
+                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-primary btn-go" type="button" id="button-addon2">GO!</button>
+                </div>
             </div>
 
         </div>
 
         <div id="section-three" class="row">
 
-            <div class="col-12 d-flex justify-content-center align-items-center">
-                <h1>“Nombre” + Después de Bitcoin, ¿Cuál es la criptomoneda con más capitalización de mercado?</h1>
+            <div class="col-12 text-center d-flex justify-content-center align-items-center">
+                <h1 class="txt-dificultad">Elegí la dificultad</h1>
             </div>
 
-            <div class="col-12 d-flex justify-content-center align-items-center">
-                <button class="btn btn-primary">Bitcoin</button>    
-            </div>
+            <div class="row">
+                <div class="col-4 d-flex justify-content-center align-items-center">
+                    <button class="btn-lg btn-primary btn-section-three">Fácil</button>
+                </div>
 
-            <div class="col-12 d-flex justify-content-center align-items-center">
-                <button class="btn btn-primary">Ethereum</button>    
-            </div>
+                <div class="col-4 d-flex justify-content-center align-items-center">
+                    <button class="btn-lg btn-primary btn-section-three">Normal</button>
+                </div>
 
-            <div class="col-12 d-flex justify-content-center align-items-center">
-                <button class="btn btn-primary">Cardano</button>    
+                <div class="col-4 d-flex justify-content-center align-items-center">
+                    <button class="btn-lg btn-primary btn-section-three">Difícil</button>
+                </div>
             </div>
 
         </div>
 
-        
-        
-</div>
+        <div id="section-four" class="row">
+
+            <div class="col-12 text-center d-flex justify-content-center align-items-center">
+                <h1>“Nombre”, después de Bitcoin, ¿Cuál es la criptomoneda con más capitalización de mercado?</h1>
+            </div>
+
+            <div class="row">
+                <div class="col-6 d-flex justify-content-center align-items-center">
+                    <button class="btn-lg btn-primary btn-section-three">Bitcoin</button>
+                </div>
+
+                <div class="col-6 d-flex justify-content-center align-items-center">
+                    <button class="btn-lg btn-primary btn-section-three">Ethereum</button>
+                </div>
+
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                    <button class="btn-lg btn-primary btn-section-three">Cardano</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="section-five" class="row">
+
+            <div class="col-12 text-center d-flex justify-content-center align-items-center">
+                <h1>“Nombre”, ¿Cuántos Bitcoin van a generarse en toda la historia?</h1>
+            </div>
+
+            <div class="row">
+                <div class="col-6 d-flex justify-content-center align-items-center">
+                    <button class="btn-lg btn-primary btn-section-three">Infinitos</button>
+                </div>
+
+                <div class="col-6 d-flex justify-content-center align-items-center">
+                    <button class="btn-lg btn-primary btn-section-three">100.000</button>
+                </div>
+
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                    <button class="btn-lg btn-primary btn-section-three">21.000.000</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="section-six" class="row">
+
+            <div class="col-12 text-center d-flex justify-content-center align-items-center">
+                <h1>“Nombre”, ¿Cuál es la criptomoneda meme más famosa?</h1>
+            </div>
+
+            <div class="row">
+                <div class="col-6 d-flex justify-content-center align-items-center">
+                    <button class="btn-lg btn-primary btn-section-three">Chainlink</button>
+                </div>
+
+                <div class="col-6 d-flex justify-content-center align-items-center">
+                    <button class="btn-lg btn-primary btn-section-three">Dogecoin</button>
+                </div>
+
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                    <button class="btn-lg btn-primary btn-section-three">Litecoin</button>
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="d-flex flex-column justify-content-center align-items-center align-content-center">
+
+            <p class="text-decoration-none text-center">
+                Juego diseñado y programado por <a href="creadores.html" target="_blank"
+                    class="links-footer text-decoration-none">Alejandro Acosta</a> y <a href="creadores.html"
+                    target="_blank" class="links-footer text-decoration-none">Facundo Scuderi</a>, alumnos de la carrera
+                Diseño Multimedial en Escuela Da Vinci.
+            </p>
+            <p> © 2021 Copyright</p>
+
+        </footer>
+
+
+
+
+
+
+
+
+
+    </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="criptogame.js"></script>
+
 </html>
