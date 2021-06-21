@@ -39,6 +39,7 @@ body{
 }
 
 #section-two {
+    /*display: none; --> descomentar esto para que funcione el js*/ 
     height:100vh;
     background-color: #110C31;
     background-image: url(img/bg-particle.svg);
