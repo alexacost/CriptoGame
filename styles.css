@@ -31,6 +31,7 @@ body{
     font-weight: 600;
     width: 150px;
     height: 60px;
+    color: white;
 }
 
 .btn-play:hover{
@@ -41,8 +42,6 @@ body{
 #section-two {
     display: none;
     height:100vh;
-    background-color: #110C31;
-    background-image: url(img/bg-particle.svg);
 }
 
 .text-name{
@@ -54,6 +53,7 @@ body{
     font-weight: 600;
     background-color: #7F00FF;
     border-color: #7F00FF;
+    color: white;
 }
 
 .btn-go:hover{

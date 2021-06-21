@@ -13,6 +13,7 @@ $("#button-addon2").click(function(){
    if (isNaN(nombre)) {
         $("#section-two").hide();
         $("#section-three").css('display', 'flex').show();
+        document.getElementById("nombre-user").innerHTML = nombre;
    }
    else {
        alert("eh macho flasheaste")
