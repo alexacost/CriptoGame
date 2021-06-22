@@ -10,11 +10,45 @@ body{
     background-color: #110C31;
     background-image: url(img/bg-particle.svg);
 }
+/* Secciones */
 
 #section-one {
     height:100vh;
     background-color: #110C31;
     background-image: url(img/bg-particle.svg);
+}
+
+#section-three {
+    display: none;
+    height:100vh;
+    background-color: #110C31;
+    background-image: url(img/bg-particle.svg);
+}
+
+#section-four {
+    display: none;
+    height:100vh;
+    background-color: #110C31;
+    background-image: url(img/bg-particle.svg);
+}
+
+#section-five {
+    display: none;
+    height:100vh;
+    background-color: #110C31;
+    background-image: url(img/bg-particle.svg);
+}
+
+#section-six {
+    display: none;
+    height:100vh;
+    background-color: #110C31;
+    background-image: url(img/bg-particle.svg);
+}
+
+#section-seven{
+    display: none;
+    height:100vh;
 }
 
 .titulo {
@@ -31,6 +65,7 @@ body{
     font-weight: 600;
     width: 150px;
     height: 60px;
+    color: white;
 }
 
 .btn-play:hover{
@@ -41,8 +76,6 @@ body{
 #section-two {
     display: none;
     height:100vh;
-    background-color: #110C31;
-    background-image: url(img/bg-particle.svg);
 }
 
 .text-name{
@@ -54,6 +87,7 @@ body{
     font-weight: 600;
     background-color: #7F00FF;
     border-color: #7F00FF;
+    color: white;
 }
 
 .btn-go:hover{
@@ -62,12 +96,7 @@ body{
     
 }
 
-#section-three {
-    display: none;
-    height:100vh;
-    background-color: #110C31;
-    background-image: url(img/bg-particle.svg);
-}
+
 
 .btn-section-three{
     background-color: #7F00FF;
@@ -89,25 +118,21 @@ body{
     color: #7F00FF;
 }
 
-#section-four {
-    /*display: none; --> descomentar esto para que funcione el js*/
-    height:100vh;
-    background-color: #110C31;
-    background-image: url(img/bg-particle.svg);
+
+
+
+
+
+#RookieDiez{
+    display: none;
 }
 
-#section-five {
-    /*display: none; --> descomentar esto para que funcione el js*/
-    height:100vh;
-    background-color: #110C31;
-    background-image: url(img/bg-particle.svg);
+#RookieOnce{
+    display: none;
 }
 
-#section-six {
-    /*display: none; --> descomentar esto para que funcione el js*/
-    height:100vh;
-    background-color: #110C31;
-    background-image: url(img/bg-particle.svg);
+#RookieDoce{
+    display: none;
 }
 
 .links-footer{
