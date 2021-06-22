@@ -90,21 +90,21 @@ body{
 }
 
 #section-four {
-    /*display: none; --> descomentar esto para que funcione el js*/
+    display: none;
     height:100vh;
     background-color: #110C31;
     background-image: url(img/bg-particle.svg);
 }
 
 #section-five {
-    /*display: none; --> descomentar esto para que funcione el js*/
+    display: none;
     height:100vh;
     background-color: #110C31;
     background-image: url(img/bg-particle.svg);
 }
 
 #section-six {
-    /*display: none; --> descomentar esto para que funcione el js*/
+    display: none;
     height:100vh;
     background-color: #110C31;
     background-image: url(img/bg-particle.svg);
