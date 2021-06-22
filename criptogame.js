@@ -22,12 +22,10 @@ $("#button-addon2").click(function(){
    }
   });
 
-  // Verificamos dificultad para saber que mostrar
+  //Dificultad Facil
 
-  $( "#button-addon3" ).click(function() {
-    var dificultad = $( this ).text();
-    // Dificultad facil
-    if (dificultad === "CriptoRookie") {
+  $( "#button-addon3").click(function() {
+
 
         $("#section-three").hide();
         $("#section-four").css('display', 'flex').show();
@@ -35,12 +33,11 @@ $("#button-addon2").click(function(){
         //Pregunta 1
 
         $("#RookieUno").click(function() {
-            var respUno = $( this ).text();
-            if (respUno === "Bitcoin"){
+
                     $("#section-four").delay(100).hide(100);
                     $("#section-five").css('display', 'flex').show();
                     $("#RookieUno").css("border-color","green");
-            }
+
         });
         $("#RookieDos").click(function() {
                 $("#RookieDos").css("border-color","red");
@@ -54,12 +51,12 @@ $("#button-addon2").click(function(){
         // Pregunta 2
 
         $("#RookieCuatro").click(function() {
-            var respCuatro = $( this ).text();
-            if (respCuatro === "21.000.000"){
+
+
                     $("#section-five").delay(100).hide(100);
                     $("#section-six").css('display', 'flex').show();
                     $("#RookieCuatro").css("border-color","green");
-            }
+
         });
         $("#RookieCinco").click(function() {
                 $("#RookieCinco").css("border-color","red");
@@ -72,11 +69,11 @@ $("#button-addon2").click(function(){
 
         $("#RookieSiete").click(function() {
             var respCinco = $( this ).text();
-            if (respCinco === "Dogecoin"){
+
                     $("#section-six").delay(100).hide(100);
-                    $("#section-seven").css('display', 'flex').show();
+                    $("#section-nosabemos").css('display', 'flex').show();
                     $("#RookieSiete").css("border-color","green");
-            }
+
         });
         $("#RookieOcho").click(function() {
                 $("#RookieOcho").css("border-color","red");
@@ -84,7 +81,105 @@ $("#button-addon2").click(function(){
         $("#RookieNueve").click(function() {
                 $("#RookieNueve").css("border-color","red");
         });
-    }
+    
+  });
+
+     // Dificultad media
+     $( "#button-addon4").click(function() {
+
+
+        $("#section-three").hide();
+        $("#section-four").css('display', 'flex').show();
+        $("#RookieDiez").show();
+        $("#RookieOnce").show();
+        $("#RookieDoce").show();
+
+        
+        //Pregunta 1
+
+        $("#RookieUno").click(function() {
+
+                    $("#section-four").delay(100).hide(100);
+                    $("#section-five").css('display', 'flex').show();
+                    $("#RookieUno").css("border-color","green");
+
+        });
+        $("#RookieDos").click(function() {
+                $("#RookieDos").css("border-color","red");
+        });
+        $("#RookieTres").click(function() {
+
+                $("#RookieTres").css("border-color","red");
+
+        });
+        $("#RookieDiez").click(function() {
+
+                $("#RookieDiez").css("border-color","red");
+
+        });
+
+        // Pregunta 2
+
+        $("#RookieCuatro").click(function() {
+
+
+                    $("#section-five").delay(100).hide(100);
+                    $("#section-six").css('display', 'flex').show();
+                    $("#RookieCuatro").css("border-color","green");
+
+        });
+        $("#RookieCinco").click(function() {
+                $("#RookieCinco").css("border-color","red");
+        });
+        $("#RookieSeis").click(function() {
+                $("#RookieSeis").css("border-color","red");
+        });
+        $("#RookieOnce").click(function() {
+
+                $("#RookieOnce").css("border-color","red");
+
+        });
+
+        // Pregunta 3
+
+        $("#RookieSiete").click(function() {
+            var respCinco = $( this ).text();
+
+                    $("#section-six").delay(100).hide(100);
+                    $("#section-nosabemos").css('display', 'flex').show();
+                    $("#RookieSiete").css("border-color","green");
+
+        });
+        $("#RookieOcho").click(function() {
+                $("#RookieOcho").css("border-color","red");
+        });
+        $("#RookieNueve").click(function() {
+                $("#RookieNueve").css("border-color","red");
+        });
+        $("#RookieDoce").click(function() {
+
+                $("#RookieDoce").css("border-color","red");
+
+        });
+    
+  });
+
+  // Dificultad Dificil
+       $( "#button-addon5").click(function() {
+
+
+        $("#section-three").hide();
+        $("#section-four").css('display', 'flex').show();
+        $("#Preguno").hide();
+        
+        //Pregunta 1
+
+
+        // Pregunta 2
+
+
+        // Pregunta 3
+    
   });
     
 

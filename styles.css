@@ -110,6 +110,26 @@ body{
     background-image: url(img/bg-particle.svg);
 }
 
+#section-seven{
+    display: none;
+}
+
+#section-eight{
+    display: none;
+}
+
+#RookieDiez{
+    display: none;
+}
+
+#RookieOnce{
+    display: none;
+}
+
+#RookieDoce{
+    display: none;
+}
+
 .links-footer{
     color: #00FFFF;
 }
