@@ -12,6 +12,7 @@
 
 $("#button-addon2").click(function(){
    var nombre = ($("input:text").val());
+   
    if (isNaN(nombre)) {
         $("#section-two").hide();
         $("#section-three").css('display', 'flex').show();
@@ -30,6 +31,8 @@ $("#button-addon2").click(function(){
         $("#section-three").hide();
         $("#section-four").css('display', 'flex').show();
         $("#Pregdifi").hide();
+        $("#PregdifiDos").hide();
+        $("#PregdifiTres").hide();
         
         //Pregunta 1
 
@@ -72,7 +75,7 @@ $("#button-addon2").click(function(){
             var respCinco = $( this ).text();
 
                     $("#section-six").delay(100).hide(100);
-                    $("#section-nosabemos").css('display', 'flex').show();
+                    $("#section-seven").css('display', 'flex').show();
                     $("#RookieSiete").css("border-color","green");
 
         });
@@ -92,6 +95,8 @@ $("#button-addon2").click(function(){
         $("#section-three").hide();
         $("#section-four").css('display', 'flex').show();
         $("#Pregdifi").hide();
+        $("#PregdifiDos").hide();
+        $("#PregdifiTres").hide();
         $("#RookieDiez").show();
         $("#RookieOnce").show();
         $("#RookieDoce").show();
@@ -148,7 +153,7 @@ $("#button-addon2").click(function(){
             var respCinco = $( this ).text();
 
                     $("#section-six").delay(100).hide(100);
-                    $("#section-nosabemos").css('display', 'flex').show();
+                    $("#section-seven").css('display', 'flex').show();
                     $("#RookieSiete").css("border-color","green");
 
         });
@@ -189,10 +194,28 @@ $("#button-addon2").click(function(){
                });       
 
         // Pregunta 2
-
+        $("#btn-preg-dos").click(function(){
+                var pregDos = ($("#input-dos").val());
+               if (pregDos === "21.000.000" || pregDos === "Ventiun Millones" || pregDos === "Ventiún Millones" || pregDos === "ventiun millones" || pregDos === "ventiun Millones" || pregDos ==="Ventiun millones"){
+                $("#section-five").delay(100).hide(100);
+                $("#section-six").css('display', 'flex').show();  
+               }
+               else {
+                $("#input-dos").css('border-color', 'red')
+               }
+               });    
 
         // Pregunta 3
-    
+        $("#btn-preg-tres").click(function(){
+                var pregTres = ($("#input-tres").val());
+               if (pregTres === "Dogecoin" || pregTres === "dogecoin"){
+                $("#section-six").delay(100).hide(100);
+                $("#section-seven").css('display', 'flex').show();  
+               }
+               else {
+                $("#input-dos").css('border-color', 'red')
+               }
+               });    
   });
     
 
