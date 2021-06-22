@@ -29,6 +29,7 @@ $("#button-addon2").click(function(){
 
         $("#section-three").hide();
         $("#section-four").css('display', 'flex').show();
+        $("#Pregdifi").hide();
         
         //Pregunta 1
 
@@ -90,6 +91,7 @@ $("#button-addon2").click(function(){
 
         $("#section-three").hide();
         $("#section-four").css('display', 'flex').show();
+        $("#Pregdifi").hide();
         $("#RookieDiez").show();
         $("#RookieOnce").show();
         $("#RookieDoce").show();
@@ -171,9 +173,20 @@ $("#button-addon2").click(function(){
         $("#section-three").hide();
         $("#section-four").css('display', 'flex').show();
         $("#Preguno").hide();
+        $("#Pregdos").hide();
+        $("#Pregtres").hide();
         
         //Pregunta 1
-
+        $("#btn-preg-uno").click(function(){
+                var pregUno = ($("#input-uno").val());
+               if (pregUno === "Bitcoin" || pregUno === "bitcoin"){
+                $("#section-four").delay(100).hide(100);
+                $("#section-five").css('display', 'flex').show();  
+               }
+               else {
+                $("#input-uno").css('border-color', 'red')
+               }
+               });       
 
         // Pregunta 2
 
