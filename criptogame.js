@@ -2,7 +2,7 @@
 // Ocultar sección 1 para mostrar la 2
 
      $("#button-addon").click(function(){
-         $("#section-one").hide();
+         $("#section-one").slideUp(500);
          $("#section-two").css('display', 'flex').show();
        });
 
@@ -14,7 +14,7 @@ $("#button-addon2").click(function(){
    var nombre = ($("input:text").val());
    
    if (isNaN(nombre)) {
-        $("#section-two").hide();
+        $("#section-two").slideUp(500);
         $("#section-three").css('display', 'flex').show();
         document.getElementById("nombre-user").innerHTML = nombre; // Imprimimos el nombre dentro del HTML
    }
@@ -25,20 +25,20 @@ $("#button-addon2").click(function(){
 
   //Dificultad Facil
 
-  $( "#button-addon3").click(function() {
+  $("#button-addon3").click(function() {
 
 
-        $("#section-three").hide();
+        $("#section-three").slideUp(500);
         $("#section-four").css('display', 'flex').show();
-        $("#Pregdifi").hide();
-        $("#PregdifiDos").hide();
-        $("#PregdifiTres").hide();
+        $("#Pregdifi").slideUp(500);
+        $("#PregdifiDos").slideUp(500);
+        $("#PregdifiTres").slideUp(500);
         
         //Pregunta 1
 
         $("#RookieUno").click(function() {
 
-                    $("#section-four").delay(100).hide(100);
+                    $("#section-four").delay(100).slideUp(500);
                     $("#section-five").css('display', 'flex').show();
                     $("#RookieUno").css("border-color","green");
 
@@ -57,7 +57,7 @@ $("#button-addon2").click(function(){
         $("#RookieCuatro").click(function() {
 
 
-                    $("#section-five").delay(100).hide(100);
+                    $("#section-five").delay(100).slideUp(500);
                     $("#section-six").css('display', 'flex').show();
                     $("#RookieCuatro").css("border-color","green");
 
@@ -74,7 +74,7 @@ $("#button-addon2").click(function(){
         $("#RookieSiete").click(function() {
             var respCinco = $( this ).text();
 
-                    $("#section-six").delay(100).hide(100);
+                    $("#section-six").delay(100).slideUp(500);
                     $("#section-seven").css('display', 'flex').show();
                     $("#RookieSiete").css("border-color","green");
 
@@ -92,11 +92,11 @@ $("#button-addon2").click(function(){
      $( "#button-addon4").click(function() {
 
 
-        $("#section-three").hide();
+        $("#section-three").slideUp(500);
         $("#section-four").css('display', 'flex').show();
-        $("#Pregdifi").hide();
-        $("#PregdifiDos").hide();
-        $("#PregdifiTres").hide();
+        $("#Pregdifi").slideUp(500);
+        $("#PregdifiDos").slideUp(500);
+        $("#PregdifiTres").slideUp(500);
         $("#RookieDiez").show();
         $("#RookieOnce").show();
         $("#RookieDoce").show();
@@ -106,7 +106,7 @@ $("#button-addon2").click(function(){
 
         $("#RookieUno").click(function() {
 
-                    $("#section-four").delay(100).hide(100);
+                    $("#section-four").delay(100).slideUp(500);
                     $("#section-five").css('display', 'flex').show();
                     $("#RookieUno").css("border-color","green");
 
@@ -130,7 +130,7 @@ $("#button-addon2").click(function(){
         $("#RookieCuatro").click(function() {
 
 
-                    $("#section-five").delay(100).hide(100);
+                    $("#section-five").delay(100).slideUp(500);
                     $("#section-six").css('display', 'flex').show();
                     $("#RookieCuatro").css("border-color","green");
 
@@ -152,7 +152,7 @@ $("#button-addon2").click(function(){
         $("#RookieSiete").click(function() {
             var respCinco = $( this ).text();
 
-                    $("#section-six").delay(100).hide(100);
+                    $("#section-six").delay(100).slideUp(500);
                     $("#section-seven").css('display', 'flex').show();
                     $("#RookieSiete").css("border-color","green");
 
@@ -175,17 +175,17 @@ $("#button-addon2").click(function(){
        $( "#button-addon5").click(function() {
 
 
-        $("#section-three").hide();
+        $("#section-three").slideUp(500);
         $("#section-four").css('display', 'flex').show();
-        $("#Preguno").hide();
-        $("#Pregdos").hide();
-        $("#Pregtres").hide();
+        $("#Preguno").slideUp(500);
+        $("#Pregdos").slideUp(500);
+        $("#Pregtres").slideUp(500);
         
         //Pregunta 1
         $("#btn-preg-uno").click(function(){
                 var pregUno = ($("#input-uno").val());
                if (pregUno === "Bitcoin" || pregUno === "bitcoin"){
-                $("#section-four").delay(100).hide(100);
+                $("#section-four").delay(100).slideUp(500);
                 $("#section-five").css('display', 'flex').show();  
                }
                else {
@@ -197,7 +197,7 @@ $("#button-addon2").click(function(){
         $("#btn-preg-dos").click(function(){
                 var pregDos = ($("#input-dos").val());
                if (pregDos === "21.000.000" || pregDos === "Ventiun Millones" || pregDos === "Ventiún Millones" || pregDos === "ventiun millones" || pregDos === "ventiun Millones" || pregDos ==="Ventiun millones"){
-                $("#section-five").delay(100).hide(100);
+                $("#section-five").delay(100).slideUp(500);
                 $("#section-six").css('display', 'flex').show();  
                }
                else {
@@ -209,7 +209,7 @@ $("#button-addon2").click(function(){
         $("#btn-preg-tres").click(function(){
                 var pregTres = ($("#input-tres").val());
                if (pregTres === "Dogecoin" || pregTres === "dogecoin"){
-                $("#section-six").delay(100).hide(100);
+                $("#section-six").delay(100).slideUp(500);
                 $("#section-seven").css('display', 'flex').show();  
                }
                else {
