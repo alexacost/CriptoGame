@@ -90,13 +90,11 @@ body{
     color: white;
 }
 
-
 .btn-go:hover{
     background-color: white;
     color: #7F00FF;
     
 }
-
 
 
 
@@ -109,12 +107,10 @@ body{
     height: 70px;
 }
 
-
 .txt-dificultad{
     font-size: 4.7em;
     font-weight: 600;
 }
-
 
 .btn-section-three:hover{
     background-color: white;
@@ -122,31 +118,25 @@ body{
     color: #7F00FF;
 }
 
-
 #RookieDiez{
     display: none;
 }
-
 
 #RookieOnce{
     display: none;
 }
 
-
 #RookieDoce{
     display: none;
 }
-
 
 .links-footer{
     color: #00FFFF;
 }
 
-
 .links-footer:hover{
     color:#00FFFF;
 }
-
 
 .intentos{
     background-color: #420316;
@@ -158,14 +148,12 @@ body{
 
 
 
-
 .menu {
     background-color: #0f003a;
     border-color: white;
     border-radius: .4em;
    padding: 5px;
 }
-
 
 .pistas {
     background-color: #8b8796;
@@ -177,7 +165,6 @@ body{
 
 }
 
-
 .menu:hover{
     background-color: #341194;
     transform: scale(1.1);
@@ -185,10 +172,7 @@ body{
 }
 
 
-
 .nav {
     padding-top: 5px;
-    display: none;
-
-
+    display: none;   
 }
