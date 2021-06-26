@@ -232,24 +232,28 @@ $("#button-addon2").click(function(){
         //Pregunta 1
         $("#btn-preg-uno").click(function(){
                 var pregUno = ($("#input-uno").val());
-               if (pregUno === "Bitcoin" || pregUno === "bitcoin"){
+               if (pregUno === "Ethereum" || pregUno === "ethereum"){
                 $("#section-four").delay(100).slideUp(500);
                 $("#section-five").css('display', 'flex').show();  
                }
                else {
-                $("#input-uno").css('border-color', 'red')
+                $("#input-uno").css('border-color', 'red');
+                intentos++;
+                document.getElementById("VerIntentos").innerHTML =  intentos;
                }
                });       
 
         // Pregunta 2
         $("#btn-preg-dos").click(function(){
                 var pregDos = ($("#input-dos").val());
-               if (pregDos === "21.000.000" || pregDos === "Ventiun Millones" || pregDos === "Ventiún Millones" || pregDos === "ventiun millones" || pregDos === "ventiun Millones" || pregDos ==="Ventiun millones"){
+               if (pregDos === "21.000.000" || pregDos === "Ventiun Millones" || pregDos === "Ventiún Millones" || pregDos === "ventiun millones" || pregDos === "ventiun Millones" || pregDos ==="Ventiun millones" || pregDos ==="21000000"){
                 $("#section-five").delay(100).slideUp(500);
                 $("#section-six").css('display', 'flex').show();  
                }
                else {
-                $("#input-dos").css('border-color', 'red')
+                $("#input-dos").css('border-color', 'red');
+                intentos++;
+                document.getElementById("VerIntentos").innerHTML =  intentos;
                }
                });    
 
@@ -261,7 +265,9 @@ $("#button-addon2").click(function(){
                 $("#section-seven").css('display', 'flex').show();  
                }
                else {
-                $("#input-dos").css('border-color', 'red')
+                $("#input-dos").css('border-color', 'red');
+                intentos++;
+                document.getElementById("VerIntentos").innerHTML =  intentos;
                }
                });    
   });
