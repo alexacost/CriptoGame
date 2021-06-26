@@ -3,7 +3,7 @@
  var intentos = 0;
  var Rta 
 
-// Ocultar sección 1 para mostrar la 2
+ // Ocultar sección 1 para mostrar la 2
 
      $("#button-addon").click(function(){
          $("#section-one").slideUp(500);
