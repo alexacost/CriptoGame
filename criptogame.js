@@ -220,7 +220,7 @@ $("#button-addon2").click(function(){
   });
   
         // Modal
-        var intentos = 2
+        
         if(intentos >= 2){
 
         $(function() {
