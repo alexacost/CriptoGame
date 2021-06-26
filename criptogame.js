@@ -55,7 +55,7 @@ $("#button-addon2").click(function(){
         $("#RookieUno").click(function() {
                 $("#RookieUno").css("border-color","red");
                 intentos++;
-                document.getElementById("VerIntentos").innerHTML = "Intentos: " + intentos;
+                document.getElementById("VerIntentos").innerHTML =  intentos;
                 
                 
         });
@@ -63,7 +63,7 @@ $("#button-addon2").click(function(){
 
                 $("#RookieTres").css("border-color","red");
                 intentos++;
-                document.getElementById("VerIntentos").innerHTML = "Intentos: " + intentos;
+                document.getElementById("VerIntentos").innerHTML =  intentos;
                 
 
         });
@@ -83,14 +83,14 @@ $("#button-addon2").click(function(){
         $("#RookieCinco").click(function() {
                 $("#RookieCinco").css("border-color","red");
                 intentos++;
-                document.getElementById("VerIntentos").innerHTML = "Intentos: " + intentos;
+                document.getElementById("VerIntentos").innerHTML =  intentos;
                 
                 
         });
         $("#RookieSeis").click(function() {
                 $("#RookieSeis").css("border-color","red");
                 intentos++;
-                document.getElementById("VerIntentos").innerHTML = "Intentos: " + intentos;
+                document.getElementById("VerIntentos").innerHTML =  intentos;
         });
 
         // Pregunta 3
@@ -106,12 +106,12 @@ $("#button-addon2").click(function(){
         $("#RookieOcho").click(function() {
                 $("#RookieOcho").css("border-color","red");
                 intentos++;
-                document.getElementById("VerIntentos").innerHTML = "Intentos: " + intentos;
+                document.getElementById("VerIntentos").innerHTML =  intentos;
         });
         $("#RookieNueve").click(function() {
                 $("#RookieNueve").css("border-color","red");
                 intentos++;
-                document.getElementById("VerIntentos").innerHTML = "Intentos: " + intentos;
+                document.getElementById("VerIntentos").innerHTML =  intentos;
         });
     
   });
@@ -143,20 +143,20 @@ $("#button-addon2").click(function(){
         $("#RookieUno").click(function() {
                 $("#RookieUno").css("border-color","red");
                 intentos++;
-                document.getElementById("VerIntentos").innerHTML = "Intentos: " + intentos;
+                document.getElementById("VerIntentos").innerHTML =  intentos;
         });
         $("#RookieTres").click(function() {
 
                 $("#RookieTres").css("border-color","red");
                 intentos++;
-                document.getElementById("VerIntentos").innerHTML = "Intentos: " + intentos;
+                document.getElementById("VerIntentos").innerHTML =  intentos;
 
         });
         $("#RookieDiez").click(function() {
 
                 $("#RookieDiez").css("border-color","red");
                 intentos++;
-                document.getElementById("VerIntentos").innerHTML = "Intentos: " + intentos;
+                document.getElementById("VerIntentos").innerHTML =  intentos;
 
         });
 
@@ -173,18 +173,18 @@ $("#button-addon2").click(function(){
         $("#RookieCinco").click(function() {
                 $("#RookieCinco").css("border-color","red");
                 intentos++;
-                document.getElementById("VerIntentos").innerHTML = "Intentos: " + intentos;
+                document.getElementById("VerIntentos").innerHTML =  intentos;
         });
         $("#RookieSeis").click(function() {
                 $("#RookieSeis").css("border-color","red");
                 intentos++;
-                document.getElementById("VerIntentos").innerHTML = "Intentos: " + intentos;
+                document.getElementById("VerIntentos").innerHTML =  intentos;
         });
         $("#RookieOnce").click(function() {
 
                 $("#RookieOnce").css("border-color","red");
                 intentos++;
-                document.getElementById("VerIntentos").innerHTML = "Intentos: " + intentos;
+                document.getElementById("VerIntentos").innerHTML =  intentos;
 
         });
 
@@ -201,18 +201,18 @@ $("#button-addon2").click(function(){
         $("#RookieOcho").click(function() {
                 $("#RookieOcho").css("border-color","red");
                 intentos++;
-                document.getElementById("VerIntentos").innerHTML = "Intentos: " + intentos;
+                document.getElementById("VerIntentos").innerHTML =  intentos;
         });
         $("#RookieNueve").click(function() {
                 $("#RookieNueve").css("border-color","red");
                 intentos++;
-                document.getElementById("VerIntentos").innerHTML = "Intentos: " + intentos;
+                document.getElementById("VerIntentos").innerHTML =  intentos;
         });
         $("#RookieDoce").click(function() {
 
                 $("#RookieDoce").css("border-color","red");
                 intentos++;
-                document.getElementById("VerIntentos").innerHTML = "Intentos: " + intentos;
+                document.getElementById("VerIntentos").innerHTML =  intentos;
 
         });
     
@@ -266,5 +266,78 @@ $("#button-addon2").click(function(){
                });    
   });
     
+    
+        // Modal
+        
+        var data = $(this).attr("#VerIntentos");
+        console.log(data)
+
+        if(intentos >= 0){
+
+                $(function() {
+                        // ventana que va a aparecer por encima con la modal
+                        var contenedorModal = $("#modal");
+                        // Boton que abre
+                        $("#btn-abrir").click(function(){
+                        contenedorModal.removeClass('oculta');
+                        });
+                        // La 'x' que cierra
+                        $("#cruz-cerrar").click(function(){
+                        contenedorModal.addClass('oculta');
+                        });
+                });
+        
+                }else{
+                $("#btn-abrir").addClass("oculta");
+                }
+        
+                if(intentos >= 0){
+        
+                        $(function() {
+                        // ventana que va a aparecer por encima con la modal
+                        var contenedorModal2 = $("#modal-2");
+                        // Boton que abre
+                        $("#btn-abrir-2").click(function(){
+                        contenedorModal2.removeClass('oculta');
+                        });
+                        // La 'x' que cierra
+                        $("#cruz-cerrar-2").click(function(){
+                        contenedorModal2.addClass('oculta');
+                        });
+                });
+                
+                }else{
+                $("#btn-abrir-2").addClass("oculta");
+                }
+        
+                
+                if(intentos >= 0){
+        
+                        $(function() {
+                        // ventana que va a aparecer por encima con la modal
+                        var contenedorModal3 = $("#modal-3");
+                        // Boton que abre
+                        $("#btn-abrir-3").click(function(){
+                        contenedorModal3.removeClass('oculta');
+                        });
+                        // La 'x' que cierra
+                        $("#cruz-cerrar-3").click(function(){
+                        contenedorModal3.addClass('oculta');
+                        });
+                });
+                
+                }else{
+                $("#btn-abrir-3").addClass("oculta");
+                }
+        
+        
+                // Jugar de nuevo
+                
+                // $("#btn-jugarDeNuevo").click(function() {
+        
+                //         $("#section-seven").delay(100).slideUp(500);
+                //         $("#section-one").css('display', 'flex').show();
+        
+                // });
 
  });
