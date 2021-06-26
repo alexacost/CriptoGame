@@ -137,3 +137,43 @@ body{
 .links-footer:hover{
     color:#00FFFF;
 }
+
+.intentos{
+    background-color: #420316;
+    border-color: white;
+    border-radius: .4em;
+   padding: 5px;
+   width: 400px ;
+}
+
+
+
+.menu {
+    background-color: #0f003a;
+    border-color: white;
+    border-radius: .4em;
+   padding: 5px;
+}
+
+.pistas {
+    background-color: #8b8796;
+    opacity: 10%;
+    border-color: white;
+    border-radius: .4em;
+   padding: 5px;
+   pointer-events: none;
+
+}
+
+.menu:hover{
+    background-color: #341194;
+    transform: scale(1.1);
+
+}
+
+
+.nav {
+    padding-top: 5px;
+    display: none;
+    
+}
