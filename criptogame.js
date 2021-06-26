@@ -1,4 +1,8 @@
  $(document).ready(function(){
+
+ var intentos = 0;
+ var Rta 
+        
 // Ocultar sección 1 para mostrar la 2
 
      $("#button-addon").click(function(){
@@ -9,8 +13,10 @@
 
 
 // Guardamos la variable del nombre, chequeamos si es letra y ocultamos la sección 2 para mostrar las 3
+$("#no-text").hide();
 
 $("#button-addon2").click(function(){
+        
    var nombre = ($("input:text").val());
    
    if (isNaN(nombre)) {
@@ -19,7 +25,7 @@ $("#button-addon2").click(function(){
         document.getElementById("nombre-user").innerHTML = nombre; // Imprimimos el nombre dentro del HTML
    }
    else {
-       alert("eh macho flasheaste")
+       $("#no-text").css("color","red").show();
    }
   });
 
@@ -36,21 +42,26 @@ $("#button-addon2").click(function(){
         
         //Pregunta 1
 
-        $("#RookieUno").click(function() {
+        $("#RookieDos").click(function() {
 
                     $("#section-four").delay(100).slideUp(500);
                     $("#section-five").css('display', 'flex').show();
-                    $("#RookieUno").css("border-color","green");
+                    $("#RookieDos").css("border-color","green");
 
         });
-        $("#RookieDos").click(function() {
-                $("#RookieDos").css("border-color","red");
+        $("#RookieUno").click(function() {
+                $("#RookieUno").css("border-color","red");
+                Rta = $("#RookieUno").text();
+                intentos++;
         });
         $("#RookieTres").click(function() {
 
                 $("#RookieTres").css("border-color","red");
+                intentos++;
 
         });
+
+        
 
         // Pregunta 2
 
@@ -64,6 +75,7 @@ $("#button-addon2").click(function(){
         });
         $("#RookieCinco").click(function() {
                 $("#RookieCinco").css("border-color","red");
+                
         });
         $("#RookieSeis").click(function() {
                 $("#RookieSeis").css("border-color","red");
@@ -104,15 +116,15 @@ $("#button-addon2").click(function(){
         
         //Pregunta 1
 
-        $("#RookieUno").click(function() {
+        $("#RookieDos").click(function() {
 
                     $("#section-four").delay(100).slideUp(500);
                     $("#section-five").css('display', 'flex').show();
-                    $("#RookieUno").css("border-color","green");
+                    $("#RookieDos").css("border-color","green");
 
         });
-        $("#RookieDos").click(function() {
-                $("#RookieDos").css("border-color","red");
+        $("#RookieUno").click(function() {
+                $("#RookieUno").css("border-color","red");
         });
         $("#RookieTres").click(function() {
 
