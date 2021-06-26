@@ -36,9 +36,12 @@ $("#button-addon2").click(function(){
 
         $("#section-three").slideUp(500);
         $("#section-four").css('display', 'flex').show();
+        $(".nav").css('display', 'flex').show();
         $("#Pregdifi").slideUp(500);
         $("#PregdifiDos").slideUp(500);
         $("#PregdifiTres").slideUp(500);
+
+
         
         //Pregunta 1
 
@@ -51,13 +54,17 @@ $("#button-addon2").click(function(){
         });
         $("#RookieUno").click(function() {
                 $("#RookieUno").css("border-color","red");
-                Rta = $("#RookieUno").text();
                 intentos++;
+                document.getElementById("VerIntentos").innerHTML = "Intentos: " + intentos;
+                
+                
         });
         $("#RookieTres").click(function() {
 
                 $("#RookieTres").css("border-color","red");
                 intentos++;
+                document.getElementById("VerIntentos").innerHTML = "Intentos: " + intentos;
+                
 
         });
 
@@ -75,10 +82,15 @@ $("#button-addon2").click(function(){
         });
         $("#RookieCinco").click(function() {
                 $("#RookieCinco").css("border-color","red");
+                intentos++;
+                document.getElementById("VerIntentos").innerHTML = "Intentos: " + intentos;
+                
                 
         });
         $("#RookieSeis").click(function() {
                 $("#RookieSeis").css("border-color","red");
+                intentos++;
+                document.getElementById("VerIntentos").innerHTML = "Intentos: " + intentos;
         });
 
         // Pregunta 3
@@ -93,9 +105,13 @@ $("#button-addon2").click(function(){
         });
         $("#RookieOcho").click(function() {
                 $("#RookieOcho").css("border-color","red");
+                intentos++;
+                document.getElementById("VerIntentos").innerHTML = "Intentos: " + intentos;
         });
         $("#RookieNueve").click(function() {
                 $("#RookieNueve").css("border-color","red");
+                intentos++;
+                document.getElementById("VerIntentos").innerHTML = "Intentos: " + intentos;
         });
     
   });
@@ -106,6 +122,7 @@ $("#button-addon2").click(function(){
 
         $("#section-three").slideUp(500);
         $("#section-four").css('display', 'flex').show();
+        $(".nav").css('display', 'flex').show();
         $("#Pregdifi").slideUp(500);
         $("#PregdifiDos").slideUp(500);
         $("#PregdifiTres").slideUp(500);
@@ -125,15 +142,21 @@ $("#button-addon2").click(function(){
         });
         $("#RookieUno").click(function() {
                 $("#RookieUno").css("border-color","red");
+                intentos++;
+                document.getElementById("VerIntentos").innerHTML = "Intentos: " + intentos;
         });
         $("#RookieTres").click(function() {
 
                 $("#RookieTres").css("border-color","red");
+                intentos++;
+                document.getElementById("VerIntentos").innerHTML = "Intentos: " + intentos;
 
         });
         $("#RookieDiez").click(function() {
 
                 $("#RookieDiez").css("border-color","red");
+                intentos++;
+                document.getElementById("VerIntentos").innerHTML = "Intentos: " + intentos;
 
         });
 
@@ -149,13 +172,19 @@ $("#button-addon2").click(function(){
         });
         $("#RookieCinco").click(function() {
                 $("#RookieCinco").css("border-color","red");
+                intentos++;
+                document.getElementById("VerIntentos").innerHTML = "Intentos: " + intentos;
         });
         $("#RookieSeis").click(function() {
                 $("#RookieSeis").css("border-color","red");
+                intentos++;
+                document.getElementById("VerIntentos").innerHTML = "Intentos: " + intentos;
         });
         $("#RookieOnce").click(function() {
 
                 $("#RookieOnce").css("border-color","red");
+                intentos++;
+                document.getElementById("VerIntentos").innerHTML = "Intentos: " + intentos;
 
         });
 
@@ -171,13 +200,19 @@ $("#button-addon2").click(function(){
         });
         $("#RookieOcho").click(function() {
                 $("#RookieOcho").css("border-color","red");
+                intentos++;
+                document.getElementById("VerIntentos").innerHTML = "Intentos: " + intentos;
         });
         $("#RookieNueve").click(function() {
                 $("#RookieNueve").css("border-color","red");
+                intentos++;
+                document.getElementById("VerIntentos").innerHTML = "Intentos: " + intentos;
         });
         $("#RookieDoce").click(function() {
 
                 $("#RookieDoce").css("border-color","red");
+                intentos++;
+                document.getElementById("VerIntentos").innerHTML = "Intentos: " + intentos;
 
         });
     
@@ -189,6 +224,7 @@ $("#button-addon2").click(function(){
 
         $("#section-three").slideUp(500);
         $("#section-four").css('display', 'flex').show();
+        $(".nav").css('display', 'flex').show();
         $("#Preguno").slideUp(500);
         $("#Pregdos").slideUp(500);
         $("#Pregtres").slideUp(500);
