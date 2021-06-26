@@ -137,3 +137,62 @@ body{
     color:#00FFFF;
 }
 
+/* MODAL */
+
+.contenedor-ventana-modal{
+	/* Alto y largo de toda la pantalla */
+	width: 100vw;
+	height: 100vh;
+	/* Negro con opacidad de 0.5 */
+	background: rgba(0,0,0, .5);
+	/* Posición fija para que aparezca por encima */
+	position: fixed;
+	left: 0;
+	top: 0;
+	/* Centrado de la modal */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.oculta{
+	display: none;
+}
+
+.ventana{
+    bottom: 170px;
+	width: 300px;
+	border-radius: 5px;
+	padding: 30px;
+	background: white;
+	/* Posición relativa, para usar la posición absoluta adentro */
+	position: relative;
+}
+
+.ventana__cruz{
+	cursor: pointer;
+	/* En relación a ventana, que tiene posición absolute */
+	position: absolute;
+	right: 10px;
+	top: 10px;
+    color: #7F00FF;
+}
+
+.btn-modal{
+    background-color: white;
+    border-color: #7F00FF;
+    color: #7F00FF;
+    border-radius: .4em;
+    font-weight: 600;
+    width: 150px;
+}
+
+.btn-modal:hover{
+    background-color: #7F00FF;
+    border-color: white;
+    color: white;
+}
+
+.ventana__titulo{
+    color: #7F00FF;
+}

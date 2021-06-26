@@ -1,4 +1,5 @@
  $(document).ready(function(){
+
 // Ocultar sección 1 para mostrar la 2
 
      $("#button-addon").click(function(){
@@ -36,15 +37,15 @@ $("#button-addon2").click(function(){
         
         //Pregunta 1
 
-        $("#RookieUno").click(function() {
+        $("#RookieDos").click(function() {
 
                     $("#section-four").delay(100).slideUp(500);
                     $("#section-five").css('display', 'flex').show();
-                    $("#RookieUno").css("border-color","green");
+                    $("#RookieDos").css("border-color","green");
 
         });
-        $("#RookieDos").click(function() {
-                $("#RookieDos").css("border-color","red");
+        $("#RookieUno").click(function() {
+                $("#RookieUno").css("border-color","red");
         });
         $("#RookieTres").click(function() {
 
@@ -104,15 +105,15 @@ $("#button-addon2").click(function(){
         
         //Pregunta 1
 
-        $("#RookieUno").click(function() {
+        $("#RookieDos").click(function() {
 
                     $("#section-four").delay(100).slideUp(500);
                     $("#section-five").css('display', 'flex').show();
-                    $("#RookieUno").css("border-color","green");
+                    $("#RookieDos").css("border-color","green");
 
         });
-        $("#RookieDos").click(function() {
-                $("#RookieDos").css("border-color","red");
+        $("#RookieUno").click(function() {
+                $("#RookieUno").css("border-color","red");
         });
         $("#RookieTres").click(function() {
 
@@ -184,7 +185,7 @@ $("#button-addon2").click(function(){
         //Pregunta 1
         $("#btn-preg-uno").click(function(){
                 var pregUno = ($("#input-uno").val());
-               if (pregUno === "Bitcoin" || pregUno === "bitcoin"){
+               if (pregUno === "Ethereum" || pregUno === "ethereum"){
                 $("#section-four").delay(100).slideUp(500);
                 $("#section-five").css('display', 'flex').show();  
                }
@@ -217,6 +218,81 @@ $("#button-addon2").click(function(){
                }
                });    
   });
-    
+  
+        // Modal
+        var intentos = 2
+        if(intentos >= 2){
 
+        $(function() {
+                // ventana que va a aparecer por encima con la modal
+                var contenedorModal = $("#modal");
+                // Boton que abre
+                $("#btn-abrir").click(function(){
+                contenedorModal.removeClass('oculta');
+                });
+                // La 'x' que cierra
+                $("#cruz-cerrar").click(function(){
+                contenedorModal.addClass('oculta');
+                });
+        });
+
+        }else{
+        $("#btn-abrir").addClass("oculta");
+        }
+
+        if(intentos >= 2){
+
+                $(function() {
+                // ventana que va a aparecer por encima con la modal
+                var contenedorModal2 = $("#modal-2");
+                // Boton que abre
+                $("#btn-abrir-2").click(function(){
+                contenedorModal2.removeClass('oculta');
+                });
+                // La 'x' que cierra
+                $("#cruz-cerrar-2").click(function(){
+                contenedorModal2.addClass('oculta');
+                });
+        });
+        
+        }else{
+        $("#btn-abrir-2").addClass("oculta");
+        }
+
+        
+        if(intentos >= 2){
+
+                $(function() {
+                // ventana que va a aparecer por encima con la modal
+                var contenedorModal3 = $("#modal-3");
+                // Boton que abre
+                $("#btn-abrir-3").click(function(){
+                contenedorModal3.removeClass('oculta');
+                });
+                // La 'x' que cierra
+                $("#cruz-cerrar-3").click(function(){
+                contenedorModal3.addClass('oculta');
+                });
+        });
+        
+        }else{
+        $("#btn-abrir-3").addClass("oculta");
+        }
+
+
+        // Jugar de nuevo
+        
+        $("#btn-jugarDeNuevo").click(function() {
+
+                $("#section-seven").delay(100).slideUp(500);
+                $("#section-one").css('display', 'flex').show();
+
+        });
+
+
+        // Usuario ganador
+        
+        $("#user-win").html(`, ganaste!`);
+
+        
  });
