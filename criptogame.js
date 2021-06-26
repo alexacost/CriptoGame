@@ -1,5 +1,7 @@
  $(document).ready(function(){
 
+ var intentos = 0;
+ var Rta 
 // Ocultar sección 1 para mostrar la 2
 
      $("#button-addon").click(function(){
