@@ -145,6 +145,10 @@ body{
    width: 400px ;
 }
 
+
+
+
+
 .menu {
     background-color: #0f003a;
     border-color: white;
@@ -171,4 +175,6 @@ body{
 .nav {
     padding-top: 5px;
     display: none;
+
+    
 }
