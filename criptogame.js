@@ -4,7 +4,6 @@
  var Rta 
 
 // Ocultar sección 1 para mostrar la 2
-
      $("#button-addon").click(function(){
          $("#section-one").slideUp(500);
          $("#section-two").css('display', 'flex').show();
