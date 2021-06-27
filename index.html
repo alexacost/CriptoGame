@@ -18,13 +18,10 @@
     <div class="container">
         <div id="section-one" class="row">
 
-            <div class="d-flex justify-content-start align-items-center col-6">
-                <img src="img/bg-inicio.png" alt="Imágen ilustrativa sobre el Bitcoin">
-
-            </div>
-
-            <div class="d-flex flex-column justify-content-center align-items-center col-6">
+            <div class="d-flex justify-content-lg-end justify-content-md-center justify-content-center  align-items-end col-md-12">
                 <h1 class="titulo">CriptoGame</h1>
+            </div>
+            <div class="d-flex justify-content-lg-end justify-content-md-center justify-content-center  align-items-start col-md-12">
                 <button id="button-addon" class="btn btn-lg mt-5 btn-play">PLAY!</button>
             </div>
 
@@ -83,188 +80,191 @@
         <div class="row nav mt-2">
 
             <div class="col-3 d-flex justify-content-center align-items-center">
-                <button id="VolverMenu" class="btn-md menu">Menu</button>
+                <button id="VolverMenu" class="btn-md menu">Inicio</button>
             </div>
-  
+
             <div class="col-6 d-flex justify-content-center align-items-center">
                 <button class="btn-md intentos" onclick="">Intentos: <span id="VerIntentos">0</span></button>
-          </div>
-  
-          <div class="col-3 d-flex justify-content-center align-items-center">
-            <button id="VerPistas" class="btn-md pistas">Pistas</button>
-          </div>
+            </div>
+
+            <div class="col-3 d-flex justify-content-center align-items-center">
+                <!--INICIO MODAL 1-->
+
+                <div class="d-flex justify-content-center align-items-center">
+                    <button class="col-12 btn-lg btn-modal" id="btn-abrir" class="button">Pistas</button>
+                </div>
+
+                <div id="modal" class="contenedor-ventana-modal oculta">
+                    <div class="ventana">
+                        <span id="cruz-cerrar" class="ventana__cruz">X</span>
+                        <p class="ventana__titulo text-center col-12">Su creador se llama Vitalik Buterin.</p>
+                    </div>
+                </div>
+
+                <!--INICIO MODAL 2-->
+
+                <div class="d-flex justify-content-center align-items-center">
+                    <button class="col-12 btn-lg btn-modal" id="btn-abrir-2" class="button">Pistas</button>
+                </div>
+
+                <div id="modal-2" class="contenedor-ventana-modal oculta">
+                    <div class="ventana">
+                        <span id="cruz-cerrar-2" class="ventana__cruz">X</span>
+                        <p class="ventana__titulo text-center col-12">Bitcoin es muy atráctivo por su emisión pactada
+                            desde el día uno, actualmente hay más de 19.000.000 generados.</p>
+                    </div>
+                </div>
+
+                <!--INICIO MODAL 3-->
+
+                <div class="d-flex justify-content-center align-items-center">
+                    <button class="col-12 btn-lg btn-modal" id="btn-abrir-3" class="button">Pistas</button>
+                </div>
+
+                <div id="modal-3" class="contenedor-ventana-modal oculta">
+                    <div class="ventana">
+                        <span id="cruz-cerrar-3" class="ventana__cruz">X</span>
+                        <p class="ventana__titulo text-center col-12">Su logo es de un perro.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="section-four" class="row">
+
+                <div class="col-12 text-center d-flex justify-content-center align-items-center">
+                    <h1 id="preg-1">Después de Bitcoin, ¿Cuál es la criptomoneda con más capitalización de mercado?</h1>
+                </div>
+
+
+                <!--FIN MODAL-->
+
+                <div id="Preguno" class="row">
+                    <div class="col-12 d-flex justify-content-center align-items-center">
+                        <button id="RookieUno" class="btn-lg  btn-section-three">Bitcoin</button>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center align-items-center">
+                        <button id="RookieDos" class="btn-lg  btn-section-three">Ethereum</button>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center align-items-center">
+                        <button id="RookieTres" class="btn-lg  btn-section-three">Cardano</button>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center align-items-center">
+                        <button id="RookieDiez" class="btn-lg  btn-section-three">Dogecoin</button>
+                    </div>
+
+                </div>
+                <div id="Pregdifi" class="row">
+                    <div class="col-12 d-flex justify-content-center align-items-center">
+                        <input id="input-uno" type="text" class="form-control" placeholder="Respuesta..">
+                        <button id="btn-preg-uno" class="btn  btn-go" type="button">Ok</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="section-five" class="row">
+
+                <div class="col-12 text-center d-flex justify-content-center align-items-center">
+                    <h1 id="preg-2">¿Cuántos Bitcoin van a generarse en toda la historia?</h1>
+                </div>
+
+
+
+                <!--FIN MODAL-->
+
+                <div id="Pregdos" class="row">
+                    <div class="col-12 d-flex justify-content-center align-items-center">
+                        <button id="RookieCinco" class="btn-lg  btn-section-three">Infinitos</button>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center align-items-center">
+                        <button id="RookieSeis" class="btn-lg  btn-section-three">100.000</button>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center align-items-center">
+                        <button id="RookieCuatro" class="btn-lg  btn-section-three">21.000.000</button>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center align-items-center">
+                        <button id="RookieOnce" class="btn-lg  btn-section-three">210.000</button>
+                    </div>
+                </div>
+
+                <div id="PregdifiDos" class="row">
+                    <div class="col-12 d-flex justify-content-center align-items-center">
+                        <input id="input-dos" type="text" class="form-control" placeholder="Respuesta..">
+                        <button id="btn-preg-dos" class="btn  btn-go" type="button">Ok</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="section-six" class="row">
+
+                <div class="col-12 text-center d-flex justify-content-center align-items-center">
+                    <h1 id="preg-3">¿Cuál es la criptomoneda meme más famosa?</h1>
+                </div>
+
+
+
+                <!--FIN MODAL-->
+
+                <div id="Pregtres" class="row">
+                    <div class="col-12 d-flex justify-content-center align-items-center">
+                        <button id="RookieOcho" class="btn-lg  btn-section-three">Chainlink</button>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center align-items-center">
+                        <button id="RookieSiete" class="btn-lg  btn-section-three">Dogecoin</button>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center align-items-center">
+                        <button id="RookieNueve" class="btn-lg  btn-section-three">Litecoin</button>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center align-items-center">
+                        <button id="RookieDoce" class="btn-lg  btn-section-three">Uniswap</button>
+                    </div>
+                </div>
+
+                <div id="PregdifiTres" class="row">
+                    <div class="col-12 d-flex justify-content-center align-items-center">
+                        <input id="input-tres" type="text" class="form-control" placeholder="Respuesta..">
+                        <button id="btn-preg-tres" class="btn  btn-go" type="button">Ok</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="section-seven" class="row">
+
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                    <h1>¡Juego Terminado!</h1>
+                </div>
+
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                    <button id="btn-jugarDeNuevo" class="btn-lg  btn-section-three">Volver a jugar</button>
+                </div>
+
+            </div>
 
         </div>
 
-        <div id="section-four" class="row">
+        <footer class="d-flex flex-column justify-content-center align-items-center align-content-center">
 
-            <div class="col-12 text-center d-flex justify-content-center align-items-center">
-                <h1 id="preg-1">Después de Bitcoin, ¿Cuál es la criptomoneda con más capitalización de mercado?</h1>
-            </div>
+            <p class="text-decoration-none text-center">
+                Juego diseñado y programado por <a href="creadores.html" target="_blank"
+                    class="links-footer text-decoration-none">Alejandro Acosta</a> y <a href="creadores.html"
+                    target="_blank" class="links-footer text-decoration-none">Facundo Scuderi</a>, alumnos de la carrera
+                Diseño Multimedial en Escuela Da Vinci.
+            </p>
+            <p> © 2021 Copyright</p>
 
-            <!--INICIO MODAL-->
-
-            <div class="d-flex justify-content-center align-items-center">
-                <button class="col-12 btn-lg btn-modal" id="btn-abrir" class="button">Pistas</button>
-            </div>
-
-            <div id="modal" class="contenedor-ventana-modal oculta">
-                <div class="ventana">
-                    <span id="cruz-cerrar" class="ventana__cruz">X</span>
-                    <p class="ventana__titulo text-center col-12">Su creador se llama Vitalik Buterin.</p>
-                </div>
-            </div>
-
-            <!--FIN MODAL-->
-
-            <div id="Preguno" class="row">
-                <div class="col-12 d-flex justify-content-center align-items-center">
-                    <button id="RookieUno" class="btn-lg  btn-section-three">Bitcoin</button>
-                </div>
-
-                <div class="col-12 d-flex justify-content-center align-items-center">
-                    <button id="RookieDos" class="btn-lg  btn-section-three">Ethereum</button>
-                </div>
-
-                <div class="col-12 d-flex justify-content-center align-items-center">
-                    <button id="RookieTres" class="btn-lg  btn-section-three">Cardano</button>
-                </div>
-
-                <div class="col-12 d-flex justify-content-center align-items-center">
-                    <button id="RookieDiez" class="btn-lg  btn-section-three">Dogecoin</button>
-                </div>
-
-            </div>
-            <div id="Pregdifi" class="row">
-                <div class="col-12 d-flex justify-content-center align-items-center">
-                    <input id="input-uno" type="text" class="form-control" placeholder="Respuesta..">
-                    <button id="btn-preg-uno" class="btn  btn-go" type="button">Ok</button>
-                </div>
-            </div>
-
-        </div>
-
-        <div id="section-five" class="row">
-
-            <div class="col-12 text-center d-flex justify-content-center align-items-center">
-                <h1 id="preg-2">¿Cuántos Bitcoin van a generarse en toda la historia?</h1>
-            </div>
-
-            <!--INICIO MODAL-->
-
-            <div class="d-flex justify-content-center align-items-center">
-                <button class="col-12 btn-lg btn-modal" id="btn-abrir-2" class="button">Pistas</button>
-            </div>
-
-            <div id="modal-2" class="contenedor-ventana-modal oculta">
-                <div class="ventana">
-                    <span id="cruz-cerrar-2" class="ventana__cruz">X</span>
-                    <p class="ventana__titulo text-center col-12">Bitcoin es muy atráctivo por su emisión pactada desde el día uno, actualmente hay más de 19.000.000 generados.</p>
-                </div>
-            </div>
-
-            <!--FIN MODAL-->
-
-            <div id="Pregdos" class="row">
-                <div class="col-12 d-flex justify-content-center align-items-center">
-                    <button id="RookieCinco" class="btn-lg  btn-section-three">Infinitos</button>
-                </div>
-
-                <div class="col-12 d-flex justify-content-center align-items-center">
-                    <button id="RookieSeis" class="btn-lg  btn-section-three">100.000</button>
-                </div>
-
-                <div class="col-12 d-flex justify-content-center align-items-center">
-                    <button id="RookieCuatro" class="btn-lg  btn-section-three">21.000.000</button>
-                </div>
-
-                <div class="col-12 d-flex justify-content-center align-items-center">
-                    <button id="RookieOnce" class="btn-lg  btn-section-three">210.000</button>
-                </div>
-            </div>
-
-            <div id="PregdifiDos" class="row">
-                <div class="col-12 d-flex justify-content-center align-items-center">
-                    <input id="input-dos" type="text" class="form-control" placeholder="Respuesta..">
-                    <button id="btn-preg-dos" class="btn  btn-go" type="button">Ok</button>
-                </div>
-            </div>
-
-        </div>
-
-        <div id="section-six" class="row">
-
-            <div class="col-12 text-center d-flex justify-content-center align-items-center">
-                <h1 id="preg-3">¿Cuál es la criptomoneda meme más famosa?</h1>
-            </div>
-
-            <!--INICIO MODAL-->
-
-            <div class="d-flex justify-content-center align-items-center">
-                <button class="col-12 btn-lg btn-modal" id="btn-abrir-3" class="button">Pistas</button>
-            </div>
-
-            <div id="modal-3" class="contenedor-ventana-modal oculta">
-                <div class="ventana">
-                    <span id="cruz-cerrar-3" class="ventana__cruz">X</span>
-                    <p class="ventana__titulo text-center col-12">Su logo es de un perro.</p>
-                </div>
-            </div>
-
-            <!--FIN MODAL-->
-
-            <div id="Pregtres" class="row">
-                <div class="col-12 d-flex justify-content-center align-items-center">
-                    <button id="RookieOcho" class="btn-lg  btn-section-three">Chainlink</button>
-                </div>
-
-                <div class="col-12 d-flex justify-content-center align-items-center">
-                    <button id="RookieSiete" class="btn-lg  btn-section-three">Dogecoin</button>
-                </div>
-
-                <div class="col-12 d-flex justify-content-center align-items-center">
-                    <button id="RookieNueve" class="btn-lg  btn-section-three">Litecoin</button>
-                </div>
-
-                <div class="col-12 d-flex justify-content-center align-items-center">
-                    <button id="RookieDoce" class="btn-lg  btn-section-three">Uniswap</button>
-                </div>
-            </div>
-
-            <div id="PregdifiTres" class="row">
-                <div class="col-12 d-flex justify-content-center align-items-center">
-                    <input id="input-tres" type="text" class="form-control" placeholder="Respuesta..">
-                    <button id="btn-preg-tres" class="btn  btn-go" type="button">Ok</button>
-                </div>
-            </div>
-
-        </div>
-
-        <div id="section-seven" class="row">
-
-            <div class="col-12 text-center d-flex justify-content-center align-items-center">
-                <h1 id="user-win" class="txt-dificultad"></h1>
-            </div>
-
-            <div class="col-12 d-flex justify-content-center align-items-center">
-                <button id="btn-jugarDeNuevo" class="btn-lg  btn-section-three">Volver a jugar</button>
-            </div>
-
-        </div>
-
-    </div>
-
-    <footer class="d-flex flex-column justify-content-center align-items-center align-content-center">
-
-        <p class="text-decoration-none text-center">
-            Juego diseñado y programado por <a href="creadores.html" target="_blank"
-                class="links-footer text-decoration-none">Alejandro Acosta</a> y <a href="creadores.html"
-                target="_blank" class="links-footer text-decoration-none">Facundo Scuderi</a>, alumnos de la carrera
-            Diseño Multimedial en Escuela Da Vinci.
-        </p>
-        <p> © 2021 Copyright</p>
-
-    </footer>
+        </footer>
 
 
 

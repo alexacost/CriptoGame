@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="boton">click me!</button>
+    <p id="text">hola</p>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    var click = 0;
+
+    $("#boton").click(function(){
+        click++;
+        console.log(click)
+        $("#text").html(click);
+       });
+
+       setInterval(function()
+       {var qclicks = ($("#text").text());
+       console.log(qclicks)
+    }, 3000
+    );
+      
+
+    
+
+
+    
+</script>
+</html>

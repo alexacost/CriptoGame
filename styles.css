@@ -9,13 +9,19 @@
 body{
     background-color: #110C31;
     background-image: url(img/bg-particle.svg);
+    background-size: cover;
 }
+
 /* Secciones */
+
+#section {
+    height: 100vh;
+}
 
 #section-one {
     height:100vh;
-    background-color: #110C31;
-    background-image: url(img/bg-particle.svg);
+    background-image: url(img/bg-criptogame.png);
+    background-size: cover;
 }
 
 #section-three {
@@ -144,6 +150,8 @@ body{
     border-radius: .4em;
    padding: 5px;
    width: 400px ;
+   pointer-events: none;
+
 }
 
 
@@ -153,16 +161,6 @@ body{
     border-color: white;
     border-radius: .4em;
    padding: 5px;
-}
-
-.pistas {
-    background-color: #8b8796;
-    opacity: 10%;
-    border-color: white;
-    border-radius: .4em;
-   padding: 5px;
-   pointer-events: none;
-
 }
 
 .menu:hover{
@@ -220,20 +218,29 @@ body{
 }
 
 .btn-modal{
-    background-color: white;
-    border-color: #7F00FF;
-    color: #7F00FF;
+    background-color: #8b8796;
+    opacity: 10%;
+    border-color: white;
     border-radius: .4em;
-    font-weight: 600;
-    width: 150px;
+   padding: 5px;
+   pointer-events: none;
 }
 
 .btn-modal:hover{
-    background-color: #7F00FF;
-    border-color: white;
-    color: white;
+    background-color: #b5b1c0;
 }
 
 .ventana__titulo{
     color: #7F00FF;
 }
+
+/*media queries*/
+@media (max-width: 600px) {
+    .titulo {
+      font-size: 3em;
+    }
+    #section-one {
+        background-image: url(img/celu-bg.png);
+        
+    }
+  }
