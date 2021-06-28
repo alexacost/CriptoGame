@@ -245,3 +245,15 @@ body{
   }
 
   /* CREADORES */
+
+
+  .volverMenuCreadores{
+      border-radius: 1em;
+      font-size: 1.5em;
+      color: white;
+  }
+
+  .volverMenuCreadores:hover{
+    color:white;
+    opacity: .3;
+}
