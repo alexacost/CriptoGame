@@ -9,7 +9,6 @@
 body{
     background-color: #110C31;
     background-image: url(img/bg-particle.svg);
-    background-size: cover;
 }
 
 /* Secciones */
@@ -244,3 +243,5 @@ body{
         
     }
   }
+
+  /* CREADORES */
