@@ -586,5 +586,4 @@ $("#button-addon2").click(function(){
                         location.reload();
                 });
 
-
  });
