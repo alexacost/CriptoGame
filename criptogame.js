@@ -57,82 +57,72 @@ $("#button-addon2").click(function(){
 
      }, 300
      );
-
-
-        
+   
         //Pregunta 1
 
         $(".pregUno").click(function() {
-                var facil = ( $(this).data("info") );
-                console.log(facil);
+                var facil1 = ( $(this).data("info") );
 
-             if(facil === "correcta"){
+                if(facil1 === "correctaPreg1"){
                         $("#section-four").delay(100).slideUp(500);
                         $("#section-five").css('display', 'flex').show();
                         $("#btn-abrir-2").show();
                         $("#btn-abrir").hide();
-                        $("#facil2").css("border-color","green");
+                        $("#facil1Resp2").css("border-color","green");
+                }else if (facil1 === "incorrecta1Preg1"){
+                        $("#facil1Resp1").css("border-color","red");              
+                        intentos++;
+                        document.getElementById("VerIntentos").innerHTML =  intentos;
                 }else{
-                        $("#facil3").css("border-color","red"); 
-                        $("#facil1").css("border-color","red");              
+                        $("#facil1Resp3").css("border-color","red");
                         intentos++;
                         document.getElementById("VerIntentos").innerHTML =  intentos;
                 }
         });
 
-
         // Pregunta 2
 
-        $("#RookieCuatro").click(function() {
+        $(".pregDos").click(function() {
+                var facil2 = ( $(this).data("info") );
 
-
+                if(facil2 === "correctaPreg2"){
                     $("#section-five").delay(100).slideUp(500);
                     $("#section-six").css('display', 'flex').show();
                     $("#btn-abrir-2").hide();
                     $("#btn-abrir-3").show();
-                    $("#RookieCuatro").css("border-color","green");
+                    $("#facil2Resp3").css("border-color","green");
 
-        });
-        $("#RookieCinco").click(function() {
-                $("#RookieCinco").css("border-color","red");
-                intentos++;
-                document.getElementById("VerIntentos").innerHTML =  intentos;
+                }else if (facil2 === "incorrecta1Preg2"){
+                        $("#facil2Resp1").css("border-color","red");              
+                        intentos++;
 
-                setInterval(function()
-                {var qclicks = ($("#VerIntentos").text());
-                 qclicks = parseInt(qclicks)
-                 if (qclicks>= 2) {
+                        document.getElementById("VerIntentos").innerHTML =  intentos;
+                        setInterval(function()
+                        {var qclicks = ($("#VerIntentos").text());
+                         qclicks = parseInt(qclicks)
+                         if (qclicks >= 2) {
+                                $("#btn-abrir-2").css("pointer-events","inherit");
+                                $("#btn-abrir-2").css("opacity","100%");
+                         }
+                     }, 300
+                );
                         
-                       
-                        $("#btn-abrir-2").css("pointer-events","inherit");
-                        $("#btn-abrir-2").css("opacity","100%");
-                        qclicks = 0;
-        
-                 }
-        
-             }, 300
-             );
-                
-                
-        });
-        $("#RookieSeis").click(function() {
-                $("#RookieSeis").css("border-color","red");
-                intentos++;
-                document.getElementById("VerIntentos").innerHTML =  intentos;
-
-                setInterval(function()
-                {var qclicks = ($("#VerIntentos").text());
-                 qclicks = parseInt(qclicks)
-                 if (qclicks >= 2) {
+                }else{
+                        $("#facil2Resp2").css("border-color","red");
+                        intentos++;
+                        document.getElementById("VerIntentos").innerHTML =  intentos;
+                        document.getElementById("VerIntentos").innerHTML =  intentos;
+                        setInterval(function()
+                        {var qclicks = ($("#VerIntentos").text());
+                         qclicks = parseInt(qclicks)
+                         if (qclicks >= 2) {
+                                $("#btn-abrir-2").css("pointer-events","inherit");
+                                $("#btn-abrir-2").css("opacity","100%");
+                         }
+                     }, 300
+                );     
                         
-                       
-                        $("#btn-abrir-2").css("pointer-events","inherit");
-                        $("#btn-abrir-2").css("opacity","100%");
-        
-                 }
-        
-             }, 300
-             );
+                }
         });
 
         // Pregunta 3
