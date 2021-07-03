@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This</title>
+</head>
+<body>
+
+    <!--
+        Los atributos data-algo son custom
+        Sirven si quiero vincular información adicional al html
+        Para usarla con javascript
+    -->
+    <button class="botoncito" id="boton1" data-info="1">Boton 1</button>
+    <button class="botoncito" id="boton2" data-info="2">Boton 2</button>
+    <button class="botoncito" id="boton3" data-info="3">Boton 3</button>
+    <button class="botoncito" id="boton4" data-info="4">Boton 4</button>
+    <button class="botoncito" id="boton5" data-info="5">Boton 5</button>
+    <button class="botoncito" id="boton6" data-info="6">Boton 6</button>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        /*
+        * Opcion 1:
+        * Detectar 1 por 1 los clicks en el dom
+        */
+       /*
+       $("#boton1").click(function(){
+           alert("Hiciste click en el boton 1")
+       })
+       $("#boton2").click(function(){
+           alert("Hiciste click en el boton 2")
+       })
+       */
+
+      /*
+      * Opcion 2:
+      * Detecto un evento sobre todos los botones
+      */ 
+      $(".botoncito").click(function(){
+          // alert("Hiciste click en un boton, no se cual")
+
+          console.log(this) // this es un elemento del DOM que obtengo con javascript nativo
+
+          // Si quiero utilizar algun método (o acción) de jquery 
+          console.log( $(this).text() ) // capturo this con $()
+
+
+          console.log( $(this).data("info") ); // Esto muestra el data-info de cada elemento
+      });
+
+      // Contextos o scopes en javascript -> this
+      // Closures
+    </script>
+</body>
+</html>

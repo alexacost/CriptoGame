@@ -62,30 +62,22 @@ $("#button-addon2").click(function(){
         
         //Pregunta 1
 
-        $("#RookieDos").click(function() {
+        $(".pregUno").click(function() {
+                var facil = ( $(this).data("info") );
+                console.log(facil);
 
-                    $("#section-four").delay(100).slideUp(500);
-                    $("#section-five").css('display', 'flex').show();
-                    $("#btn-abrir-2").show();
-                    $("#btn-abrir").hide();
-                    $("#RookieDos").css("border-color","green");
-
-        });
-        $("#RookieUno").click(function() {
-                $("#RookieUno").css("border-color","red");
-                intentos++;
-                document.getElementById("VerIntentos").innerHTML =  intentos;
-               
-                
-                
-        });
-        $("#RookieTres").click(function() {
-
-                $("#RookieTres").css("border-color","red");
-                intentos++;
-                document.getElementById("VerIntentos").innerHTML =  intentos;
-                
-
+             if(facil === "correcta"){
+                        $("#section-four").delay(100).slideUp(500);
+                        $("#section-five").css('display', 'flex').show();
+                        $("#btn-abrir-2").show();
+                        $("#btn-abrir").hide();
+                        $("#facil2").css("border-color","green");
+                }else{
+                        $("#facil3").css("border-color","red"); 
+                        $("#facil1").css("border-color","red");              
+                        intentos++;
+                        document.getElementById("VerIntentos").innerHTML =  intentos;
+                }
         });
 
 
