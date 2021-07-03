@@ -7,26 +7,25 @@
     <title>Document</title>
 </head>
 <body>
-    <button id="boton">click me!</button>
-    <p id="text">hola</p>
+    <button id="boton" data-info="correcta">boca</button>
+    <button id="boton" data-info="incorrecta">riber</button>
+   
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-    var click = 0;
 
-    $("#boton").click(function(){
-        click++;
-        console.log(click)
-        $("#text").html(click);
-       });
 
-       setInterval(function()
-       {var qclicks = ($("#text").text());
-       console.log(qclicks)
-    }, 3000
-    );
-      
+      $("#boton").click(function(){
+          // alert("Hiciste click en un boton, no se cual")
 
+          console.log(this) // this es un elemento del DOM que obtengo con javascript nativo
+
+          // Si quiero utilizar algun método (o acción) de jquery 
+          console.log( $(this).text() ) // capturo this con $()
+
+
+          console.log( $(this).data("info") ); // Esto muestra el data-info de cada elemento
+      });
     
 
 
