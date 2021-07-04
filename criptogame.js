@@ -57,8 +57,8 @@ $("#button-addon2").click(function(){
 
      }, 300
      );
-   
-        //Pregunta 1
+});
+        //Pregunta 1 - Fácil y Normal (ID:Rookie hace ref. al btn agregado para dificultad normal)
 
         $(".pregUno").click(function() {
                 var facil1 = ( $(this).data("info") );
@@ -73,14 +73,18 @@ $("#button-addon2").click(function(){
                         $("#facil1Resp1").css("border-color","red");              
                         intentos++;
                         document.getElementById("VerIntentos").innerHTML =  intentos;
-                }else{
+                }else if (facil1 === "incorrecta2Preg1"){
                         $("#facil1Resp3").css("border-color","red");
+                        intentos++;
+                        document.getElementById("VerIntentos").innerHTML =  intentos;
+                }else{
+                        $("#RookieDiez").css("border-color","red");
                         intentos++;
                         document.getElementById("VerIntentos").innerHTML =  intentos;
                 }
         });
 
-        // Pregunta 2
+        // Pregunta 2 - Fácil y Normal (ID:Rookie hace ref. al btn agregado para dificultad normal)
 
         $(".pregDos").click(function() {
                 var facil2 = ( $(this).data("info") );
@@ -99,83 +103,107 @@ $("#button-addon2").click(function(){
                         document.getElementById("VerIntentos").innerHTML =  intentos;
                         setInterval(function()
                         {var qclicks = ($("#VerIntentos").text());
-                         qclicks = parseInt(qclicks)
-                         if (qclicks >= 2) {
+                        qclicks = parseInt(qclicks)
+                        if (qclicks >= 2) {
                                 $("#btn-abrir-2").css("pointer-events","inherit");
                                 $("#btn-abrir-2").css("opacity","100%");
                          }
                      }, 300
                 );
                         
-                }else{
+                }else if(facil2 === "incorrecta2Preg2"){
                         $("#facil2Resp2").css("border-color","red");
                         intentos++;
-                        document.getElementById("VerIntentos").innerHTML =  intentos;
+
                         document.getElementById("VerIntentos").innerHTML =  intentos;
                         setInterval(function()
                         {var qclicks = ($("#VerIntentos").text());
-                         qclicks = parseInt(qclicks)
-                         if (qclicks >= 2) {
+                        qclicks = parseInt(qclicks)
+                        if (qclicks >= 2) {
                                 $("#btn-abrir-2").css("pointer-events","inherit");
                                 $("#btn-abrir-2").css("opacity","100%");
                          }
                      }, 300
                 );     
                         
+                }else{
+                        $("#RookieOnce").css("border-color","red");
+                        intentos++;
+
+                        document.getElementById("VerIntentos").innerHTML =  intentos;
+                        setInterval(function()
+                        {var qclicks = ($("#VerIntentos").text());
+                        qclicks = parseInt(qclicks)
+                        if (qclicks >= 2) {
+                                $("#btn-abrir-2").css("pointer-events","inherit");
+                                $("#btn-abrir-2").css("opacity","100%");
+                         }
+                     }, 300
+                );     
                 }
         });
 
-        // Pregunta 3
+        // Pregunta 3 - Fácil y Normal (ID:Rookie hace ref. al btn agregado para dificultad normal)
 
-        $("#RookieSiete").click(function() {
-            var respCinco = $( this ).text();
+        $(".pregTres").click(function() {
+                var facil3 = ( $(this).data("info") );
 
+                if(facil3 === "correctaPreg3"){
                     $("#section-six").delay(100).slideUp(500);
                     $("#section-seven").css('display', 'flex').show();
-                    $("#RookieSiete").css("border-color","green");
+                    $("#facil3Resp2").css("border-color","green");
                     $("#btn-abrir-3").hide();
                     $("#VolverMenu").hide();
                     
+                }else if(facil3 === "incorrecta1Preg3"){
+                $("#facil3Resp1").css("border-color","red");
+                intentos++;
 
-        });
-        $("#RookieOcho").click(function() {
-                $("#RookieOcho").css("border-color","red");
-                intentos++;
                 document.getElementById("VerIntentos").innerHTML =  intentos;
                 setInterval(function()
                 {var qclicks = ($("#VerIntentos").text());
                  qclicks = parseInt(qclicks)
                  if (qclicks >= 2) {
-                        
-                       
                         $("#btn-abrir-3").css("pointer-events","inherit");
                         $("#btn-abrir-3").css("opacity","100%");
-        
                  }
         
              }, 300
              );
-        });
-        $("#RookieNueve").click(function() {
-                $("#RookieNueve").css("border-color","red");
+
+                }else if(facil3 === "incorrecta2Preg3"){
+                $("#facil3Resp3").css("border-color","red");
                 intentos++;
+
                 document.getElementById("VerIntentos").innerHTML =  intentos;
                 setInterval(function()
                 {var qclicks = ($("#VerIntentos").text());
-                 qclicks = parseInt(qclicks)
-                 if (qclicks >= 2) {
-                        
-                       
+                qclicks = parseInt(qclicks)
+                if (qclicks >= 2) {              
                         $("#btn-abrir-3").css("pointer-events","inherit");
                         $("#btn-abrir-3").css("opacity","100%");
-        
                  }
         
-             }, 300
-             );
+                }, 300
+                );
+                }else{
+                        $("#RookieDoce").css("border-color","red");
+                        intentos++;
+        
+                        document.getElementById("VerIntentos").innerHTML =  intentos;
+                        setInterval(function()
+                        {var qclicks = ($("#VerIntentos").text());
+                        qclicks = parseInt(qclicks)
+                        if (qclicks >= 2) {              
+                                $("#btn-abrir-3").css("pointer-events","inherit");
+                                $("#btn-abrir-3").css("opacity","100%");
+                         }
+                
+                        }, 300
+                        ); 
+                }
         });
-    
-  });
+
 
      // Dificultad media
      $("#button-addon4").click(function() {
@@ -204,184 +232,6 @@ $("#button-addon2").click(function(){
 
      }, 300
      );
-
-
-        
-        
-
-
-        
-        //Pregunta 1
-
-        $("#RookieDos").click(function() {
-
-                    $("#section-four").delay(100).slideUp(500);
-                    $("#section-five").css('display', 'flex').show();
-                    $("#RookieDos").css("border-color","green");
-                    $("#btn-abrir").hide();
-                    $("#btn-abrir-2").show();
-
-
-        });
-        $("#RookieUno").click(function() {
-                $("#RookieUno").css("border-color","red");
-                intentos++;
-                document.getElementById("VerIntentos").innerHTML =  intentos;      
-                    
-                
-        });
-        $("#RookieTres").click(function() {
-
-                $("#RookieTres").css("border-color","red");
-                intentos++;
-                document.getElementById("VerIntentos").innerHTML =  intentos;
-
-        });
-        $("#RookieDiez").click(function() {
-
-                $("#RookieDiez").css("border-color","red");
-                intentos++;
-                document.getElementById("VerIntentos").innerHTML =  intentos;
-
-        });
-
-        // Pregunta 2
-
-        $("#RookieCuatro").click(function() {
-                    $("#section-five").delay(100).slideUp(500);
-                    $("#section-six").css('display', 'flex').show();
-                    $("#btn-abrir-2").hide();
-                    $("#btn-abrir-3").show();
-        });
-        $("#RookieCinco").click(function() {
-                $("#RookieCinco").css("border-color","red");
-                intentos++;
-                document.getElementById("VerIntentos").innerHTML =  intentos;
-                setInterval(function()
-                {var qclicks = ($("#VerIntentos").text());
-                 qclicks = parseInt(qclicks)
-                 qclicks = qclicks-2
-                 if (qclicks+1 >= 2) {
-                        
-                       
-                        $("#btn-abrir-2").css("pointer-events","inherit");
-                        $("#btn-abrir-2").css("opacity","100%");
-        
-                 }
-        
-             }, 300
-             );
-        });
-        $("#RookieSeis").click(function() {
-                $("#RookieSeis").css("border-color","red");
-                intentos++;
-                document.getElementById("VerIntentos").innerHTML =  intentos;
-                setInterval(function()
-                {var qclicks = ($("#VerIntentos").text());
-                 qclicks = parseInt(qclicks)
-                 if (qclicks >= 2) {
-                        
-                       
-                        $("#btn-abrir-2").css("pointer-events","inherit");
-                        $("#btn-abrir-2").css("opacity","100%");
-        
-                 }
-        
-             }, 300
-             );
-        });
-        $("#RookieOnce").click(function() {
-
-                $("#RookieOnce").css("border-color","red");
-                intentos++;
-                document.getElementById("VerIntentos").innerHTML =  intentos;
-                setInterval(function()
-                {var qclicks = ($("#VerIntentos").text());
-                 qclicks = parseInt(qclicks)
-                 if (qclicks >= 2) {
-                        
-                       
-                        $("#btn-abrir-2").css("pointer-events","inherit");
-                        $("#btn-abrir-2").css("opacity","100%");
-        
-                 }
-        
-             }, 300
-             );
-
-        });
-
-        // Pregunta 3
-
-        $("#RookieSiete").click(function() {
-
-                    $("#section-six").delay(100).slideUp(500);
-                    $("#section-seven").css('display', 'flex').show();
-                    $("#RookieSiete").css("border-color","green");
-                    $("#btn-abrir-3").hide();
-                    $("#VolverMenu").hide();
-
-        });
-        $("#RookieOcho").click(function() {
-                $("#RookieOcho").css("border-color","red");
-                intentos++;
-                document.getElementById("VerIntentos").innerHTML =  intentos;
-                setInterval(function()
-                {var qclicks = ($("#VerIntentos").text());
-                 qclicks = parseInt(qclicks)
-                 if (qclicks >= 2) {
-                        
-                       
-                        $("#btn-abrir-3").css("pointer-events","inherit");
-                        $("#btn-abrir-3").css("opacity","100%");
-        
-                 }
-        
-             }, 300
-             );
-                
-        });
-        $("#RookieNueve").click(function() {
-                $("#RookieNueve").css("border-color","red");
-                intentos++;
-                document.getElementById("VerIntentos").innerHTML =  intentos;
-                
-                setInterval(function()
-                {var qclicks = ($("#VerIntentos").text());
-                 qclicks = parseInt(qclicks)
-                 if (qclicks >= 2) {
-                        
-                       
-                        $("#btn-abrir-3").css("pointer-events","inherit");
-                        $("#btn-abrir-3").css("opacity","100%");
-        
-                 }
-        
-             }, 300
-             );
-        });
-        $("#RookieDoce").click(function() {
-
-                $("#RookieDoce").css("border-color","red");
-                intentos++;
-                document.getElementById("VerIntentos").innerHTML =  intentos;
-                
-                setInterval(function()
-                {var qclicks = ($("#VerIntentos").text());
-                 qclicks = parseInt(qclicks)
-                 if (qclicks >= 2) {
-                        
-                       
-                        $("#btn-abrir-3").css("pointer-events","inherit");
-                        $("#btn-abrir-3").css("opacity","100%");
-        
-                 }
-        
-             }, 300
-             );
-
-        });
-    
   });
 
   // Dificultad Dificil
