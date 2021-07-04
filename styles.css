@@ -56,6 +56,11 @@ body{
     height:100vh;
 }
 
+#section-eight{
+    display: none;
+    height:100vh;
+}
+
 .titulo {
     font-size: 6em;
     font-weight: 700;

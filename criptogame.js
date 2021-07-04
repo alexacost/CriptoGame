@@ -58,6 +58,7 @@ $("#button-addon2").click(function(){
      }, 300
      );
 });
+
         //Pregunta 1 - Fácil y Normal (ID:Rookie hace ref. al btn agregado para dificultad normal)
 
         $(".pregUno").click(function() {
@@ -82,6 +83,12 @@ $("#button-addon2").click(function(){
                         intentos++;
                         document.getElementById("VerIntentos").innerHTML =  intentos;
                 }
+
+                if(intentos === 5){
+                        $("#section-four").delay(100).slideUp(500);
+                        $("#section-eight").css('display', 'flex').show();
+                }
+              
         });
 
         // Pregunta 2 - Fácil y Normal (ID:Rookie hace ref. al btn agregado para dificultad normal)
@@ -140,6 +147,11 @@ $("#button-addon2").click(function(){
                          }
                      }, 300
                 );     
+                }
+
+                if(intentos === 5){
+                        $("#section-five").delay(100).slideUp(500);
+                        $("#section-eight").css('display', 'flex').show();
                 }
         });
 
@@ -202,6 +214,12 @@ $("#button-addon2").click(function(){
                         }, 300
                         ); 
                 }
+
+                if(intentos === 5){
+                        $("#section-six").delay(100).slideUp(500);
+                        $("#section-eight").css('display', 'flex').show();
+                }
+
         });
 
 
@@ -339,6 +357,8 @@ $("#button-addon2").click(function(){
              );
                }
                });    
+
+               
   });
     
     
@@ -417,5 +437,11 @@ $("#button-addon2").click(function(){
                 $("#VolverMenu").click(function() {
                         location.reload();
                 });
+
+                $("#btn-jugarDeNuevo2").click(function() {
+                        location.reload();
+                });
+
+
 
  });
