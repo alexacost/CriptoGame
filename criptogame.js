@@ -254,8 +254,6 @@ $("#button-addon2").click(function(){
 
   // Dificultad Dificil
        $( "#button-addon5").click(function() {
-
-
         $("#section-three").slideUp(500);
         $("#section-four").css('display', 'flex').show();
         $(".nav").css('display', 'flex').show();
@@ -268,22 +266,20 @@ $("#button-addon2").click(function(){
         {var qclicks = ($("#VerIntentos").text());
          qclicks = parseInt(qclicks)
          if (qclicks >= 2) {
-                
-               
+                 
                 $("#btn-abrir").css("pointer-events","inherit");
                 $("#btn-abrir").css("opacity","100%");
-
          }
 
      }, 300
      );
-
-
-
-        
+});
+   
         //Pregunta 1
+
         $("#btn-preg-uno").click(function(){
                 var pregUno = ($("#input-uno").val());
+
                if (pregUno === "Ethereum" || pregUno === "ethereum"){
                 $("#section-four").delay(100).slideUp(500);
                 $("#section-five").css('display', 'flex').show(); 
@@ -296,19 +292,25 @@ $("#button-addon2").click(function(){
                 intentos++;
                 document.getElementById("VerIntentos").innerHTML =  intentos;
                }
+
+               if(intentos === 5){
+                $("#section-four").delay(100).slideUp(500);
+                $("#section-eight").css('display', 'flex').show();
+                }
+
                });       
 
         // Pregunta 2
+
         $("#btn-preg-dos").click(function(){
                 var pregDos = ($("#input-dos").val());
                if (pregDos === "21.000.000" || pregDos === "Ventiun Millones" || pregDos === "Ventiún Millones" || pregDos === "ventiun millones" || pregDos === "ventiun Millones" || pregDos ==="Ventiun millones" || pregDos ==="21000000"){
                 $("#section-five").delay(100).slideUp(500);
                 $("#section-six").css('display', 'flex').show();
                 $("#btn-abrir-2").hide();
-                $("#btn-abrir-3").show();
-                
-               }
-               else {
+                $("#btn-abrir-3").show();  
+
+               }else{
                 $("#input-dos").css('border-color', 'red');
                 intentos++;
                 document.getElementById("VerIntentos").innerHTML =  intentos;
@@ -317,7 +319,6 @@ $("#button-addon2").click(function(){
                  qclicks = parseInt(qclicks)
                  if (qclicks >= 2) {
                         
-                       
                         $("#btn-abrir-2").css("pointer-events","inherit");
                         $("#btn-abrir-2").css("opacity","100%");
         
@@ -327,6 +328,12 @@ $("#button-addon2").click(function(){
              );
                 
                }
+
+               if(intentos === 5){
+                $("#section-five").delay(100).slideUp(500);
+                $("#section-eight").css('display', 'flex').show();
+                }
+
                });    
 
         // Pregunta 3
@@ -345,8 +352,7 @@ $("#button-addon2").click(function(){
                 setInterval(function()
                 {var qclicks = ($("#VerIntentos").text());
                  qclicks = parseInt(qclicks)
-                 if (qclicks >= 2) {
-                        
+                 if (qclicks >= 2) {        
                        
                         $("#btn-abrir-3").css("pointer-events","inherit");
                         $("#btn-abrir-3").css("opacity","100%");
@@ -356,10 +362,16 @@ $("#button-addon2").click(function(){
              }, 300
              );
                }
+
+               if(intentos === 5){
+                $("#section-six").delay(100).slideUp(500);
+                $("#section-eight").css('display', 'flex').show();
+                }
+
                });    
 
                
-  });
+
     
     
         // Modal
